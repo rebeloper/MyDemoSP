@@ -13,6 +13,8 @@ public extension View {
         NavigationView { self }
     }
     
+    /// Wraps the view into a NavigationView with StackNavigationViewStyle
+    /// - Returns: a view embeded in a NavigationView
     func isInStackNavigationView() -> some View {
         NavigationView { self }.navigationViewStyle(StackNavigationViewStyle())
     }
